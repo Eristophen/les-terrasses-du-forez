@@ -232,6 +232,16 @@ nav > ul > li:hover > a{
   animation: apparitionSousMenu 1s forwards;
 }
 
+/* Ouverture au clic/tap (mobile et tablette, où :hover n'est pas fiable) */
+.menu_deroulant.open > a:before{
+  transform: rotate(90deg);
+}
+.menu_deroulant.open > .sous_menu{
+  max-height: 50em;
+  border-top: 3px solid #717171;
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+}
+
 /* Styles pour diapo */
 
 .slideshow-container {
