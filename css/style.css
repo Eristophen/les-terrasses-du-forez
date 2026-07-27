@@ -76,10 +76,6 @@ p{
   grid-template-columns: 1fr 1fr;
 }
 
-.box{
-  height: 100px;
-}
-
 .image1{
   width: 100%;
   height: auto;
@@ -114,15 +110,12 @@ p{
 }
 
 .facebook{
-  position: relative;
-  height: 50%;
+  display: inline-block;
+  margin: 10px;
 }
 
 .facebookI{
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 100px;
+  width: 80px;
 }
 
 form {
@@ -330,17 +323,7 @@ nav > ul > li:hover > a{
     grid-template-columns: 1fr;
     padding: 20px;
   }
-  .box{
-    height: auto;
-  }
-  .facebook{
-    position: static;
-    height: auto;
-    display: inline-block;
-    margin: 10px;
-  }
   .facebookI{
-    position: static;
     width: 60px;
   }
   .slideshow-container{
