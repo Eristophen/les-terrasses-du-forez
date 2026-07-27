@@ -365,6 +365,13 @@ nav > ul > li:hover > a{
     font-size: 13px;
     white-space: nowrap;
   }
+  .sous_menu{
+    position: fixed;
+    left: 0;
+    top: var(--hauteur-menu);
+    width: 100%;
+    z-index: 5;
+  }
   .thumbnail{
     width: 45vw;
     height: 45vw;
