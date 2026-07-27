@@ -1,0 +1,36 @@
+{
+  "photos": [
+    {
+      "image": "Pergola/pergola1.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "image": "Pergola/pergola2.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "image": "Pergola/pergola3.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "image": "Pergola/pergola4.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "image": "Pergola/pergola5.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "image": "Pergola/pergola6.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "image": "Pergola/pergola7.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "image": "Pergola/pergola8.jpg",
+      "alt": "Image 1"
+    }
+  ]
+}

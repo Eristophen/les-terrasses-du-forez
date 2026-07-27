@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contactez Les Terrasses du Forez à Roche-la-Molière pour un devis terrasse bois, pergola, bardage ou dallette céramique dans la Loire, Haute-Loire et le Rhône.">
+        <title>Contact | Les Terrasses du Forez</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+            <header>
+                <div class="banniere">
+                    <a href="Image/carte_visite.jpeg" target="blank"><img src="Image/Logo.png"alt="Logo Les terrasses du Forez" title="Carte de visite" class="logo"></a>
+                </div>
+            </header>
+    
+            <div id="nav-placeholder"></div>
+            <main>
+                <h2>Contactez-nous</h2>
+                <form name="contact" method="POST" action="/merci.html" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p style="position:absolute; left:-9999px;">
+                        <label>Ne pas remplir ce champ : <input name="bot-field"></label>
+                    </p>
+                    <fieldset>
+                        <label for="nom">Nom Prénom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <input type="submit" value="Envoyer">
+                    </fieldset>
+                </form>
+            </main>
+            <div id="footer-placeholder"></div>
+        <script src="Java/includes.js"></script>
+    </body>
+</html>

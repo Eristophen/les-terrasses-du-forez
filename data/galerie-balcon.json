@@ -1,0 +1,24 @@
+{
+  "photos": [
+    {
+      "image": "Terrasses_balcon/balcon1.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "image": "Terrasses_balcon/balcon2.jpg",
+      "alt": "Image2"
+    },
+    {
+      "image": "Terrasses_balcon/balcon3.jpeg",
+      "alt": "Image3"
+    },
+    {
+      "image": "Terrasses_balcon/balcon4.jpeg",
+      "alt": "Image4"
+    },
+    {
+      "image": "Terrasses_balcon/balcon5.jpeg",
+      "alt": "Image5"
+    }
+  ]
+}

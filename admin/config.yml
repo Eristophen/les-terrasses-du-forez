@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: "fr"
+
+media_folder: "Image/uploads"
+public_folder: "/Image/uploads"
+
+collections:
+  - name: "galerie_bois"
+    label: "Galerie - Terrasses Bois"
+    files:
+      - file: "data/galerie-bois.json"
+        label: "Photos - Terrasses Bois"
+        name: "galerie_bois"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Photo", name: "image", widget: "image", media_folder: "/Terrasses_bois", public_folder: "/Terrasses_bois" }
+              - { label: "Description", name: "alt", widget: "string", required: false, hint: "Courte description de la photo (facultatif)" }
+
+  - name: "galerie_dallettes"
+    label: "Galerie - Terrasses Dallettes Céramiques"
+    files:
+      - file: "data/galerie-dallettes.json"
+        label: "Photos - Dallettes Céramiques"
+        name: "galerie_dallettes"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Photo", name: "image", widget: "image", media_folder: "/Terrasses_dalles", public_folder: "/Terrasses_dalles" }
+              - { label: "Description", name: "alt", widget: "string", required: false, hint: "Courte description de la photo (facultatif)" }
+
+  - name: "galerie_balcon"
+    label: "Galerie - Extension/Création Balcon"
+    files:
+      - file: "data/galerie-balcon.json"
+        label: "Photos - Balcon"
+        name: "galerie_balcon"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Photo", name: "image", widget: "image", media_folder: "/Terrasses_balcon", public_folder: "/Terrasses_balcon" }
+              - { label: "Description", name: "alt", widget: "string", required: false, hint: "Courte description de la photo (facultatif)" }
+
+  - name: "galerie_bardages"
+    label: "Galerie - Bardages"
+    files:
+      - file: "data/galerie-bardages.json"
+        label: "Photos - Bardages"
+        name: "galerie_bardages"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Photo", name: "image", widget: "image", media_folder: "/Bardage", public_folder: "/Bardage" }
+              - { label: "Description", name: "alt", widget: "string", required: false, hint: "Courte description de la photo (facultatif)" }
+
+  - name: "galerie_pergola"
+    label: "Galerie - Pergola"
+    files:
+      - file: "data/galerie-pergola.json"
+        label: "Photos - Pergola"
+        name: "galerie_pergola"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Photo", name: "image", widget: "image", media_folder: "/Pergola", public_folder: "/Pergola" }
+              - { label: "Description", name: "alt", widget: "string", required: false, hint: "Courte description de la photo (facultatif)" }
