@@ -6,6 +6,7 @@
         <meta name="description" content="Entreprise de création de terrasses bois, dallettes céramiques, pergolas et bardages à Roche-la-Molière. Devis gratuit, intervention en Loire, Haute-Loire et Rhône.">
         <title>Les Terrasses du Forez | Terrasses bois, dallettes &amp; pergolas à Roche-la-Molière</title>
         <link href="css/style.css" rel="stylesheet">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
 
     <body>
@@ -129,5 +130,16 @@
         </main>
         <div id="footer-placeholder"></div>
         <script src="Java/includes.js"></script>
-    </body> 
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", function (user) {
+              if (!user) {
+                window.netlifyIdentity.on("login", function () {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        </script>
+    </body>
 </html>
