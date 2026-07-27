@@ -193,6 +193,7 @@ li a{
   height: 50px;
   padding-left: 20px;
   width: 100%;
+  box-sizing: border-box;
   align-items: center;
   display: flex;
 }
