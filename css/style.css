@@ -180,12 +180,14 @@ li a{
 }
 .sous_menu{
   margin-top: var(--hauteur-menu);
+  padding: 0;
   width: 100%;
   text-align: left;
   background-color: white;
   border-radius: 2px;
   overflow: hidden;
   max-height: 0;
+  box-sizing: border-box;
 }
 .sous_menu > li > a{
   height: 50px;
