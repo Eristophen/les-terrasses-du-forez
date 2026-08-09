@@ -66,11 +66,6 @@ p{
 .composite{
   text-decoration: none;
 }
-.box{
-  display: block;
-  padding: 10px;
-}
-
 .contener{
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -82,40 +77,54 @@ p{
 }
 
 .banniere_2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 50px;
-  background-image: url('Fond_en_tete.jpg');
-  background-size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 45px 60px;
+  background-image: linear-gradient(rgba(20,12,5,0.45), rgba(20,12,5,0.45)), url('Fond_en_tete.jpg');
+  background-size: cover;
   background-position: center;
 }
 
-.adresse_titre{
+.footer-col{
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-heading{
   color: #ffffff;
-  font-size: 2em;
-  background-color: #783506;
-  background-size: 10px;
-  border: 2px solid white;
-  border-radius: 10px;
-  box-shadow: 6px 6px 5px white;
-  margin:10px;
-  padding: 10px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  display: inline-block;
 }
 
 .adresse{
   color: #ffffff;
   text-align: left;
-  padding: 10px;
-  margin:10px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.7;
 }
 
-.facebook{
-  display: inline-block;
-  margin: 10px;
+.footer-social{
+  display: flex;
+  gap: 18px;
 }
 
 .facebookI{
-  width: 80px;
+  width: 56px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.facebookL:hover .facebookI{
+  transform: translateY(-4px);
+  opacity: 0.85;
 }
 
 form {
@@ -333,11 +342,12 @@ nav > ul > li:hover > a{
     grid-template-columns: 1fr;
   }
   .banniere_2{
-    grid-template-columns: 1fr;
-    padding: 20px;
+    flex-direction: column;
+    gap: 28px;
+    padding: 30px 24px;
   }
   .facebookI{
-    width: 60px;
+    width: 48px;
   }
   .slideshow-container{
     max-width: 100%;
@@ -348,8 +358,8 @@ nav > ul > li:hover > a{
   h1{
     font-size: 32px;
   }
-  .adresse_titre{
-    font-size: 1.3em;
+  .footer-heading{
+    font-size: 1.1em;
   }
 }
 
