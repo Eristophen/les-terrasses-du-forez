@@ -383,12 +383,11 @@ nav > ul > li:hover > a{
 
 .credit{
   text-align: center;
-  padding: 8px;
+  padding: 14px;
   background-color: #f4f4f4;
 }
 
 .credit-signature{
-  height: 28px;
+  height: 48px;
   width: auto;
-  opacity: 0.85;
 }
