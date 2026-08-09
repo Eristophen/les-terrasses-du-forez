@@ -380,3 +380,15 @@ nav > ul > li:hover > a{
     height: 45vw;
   }
 }
+
+.credit{
+  text-align: center;
+  padding: 8px;
+  background-color: #f4f4f4;
+}
+
+.credit-signature{
+  height: 28px;
+  width: auto;
+  opacity: 0.85;
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="200" viewBox="0 0 520 200">
+  <defs>
+    <style>
+      .badge-ring { fill: none; stroke: #C9A227; stroke-width: 1.4; }
+      .badge-ring-inner { fill: none; stroke: #C9A227; stroke-width: 0.6; opacity: 0.6; }
+      .monogram { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; fill: #F5F1E8; }
+      .wordmark { font-family: Georgia, 'Times New Roman', serif; fill: #1B1F3B; letter-spacing: 0.32em; }
+      .tagline { font-family: Georgia, 'Times New Roman', serif; fill: #6B6250; letter-spacing: 0.22em; }
+      .rule { stroke: #C9A227; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Seal / badge -->
+  <g transform="translate(70,100)">
+    <circle r="58" fill="#1B1F3B" />
+    <circle class="badge-ring" r="52" />
+    <circle class="badge-ring-inner" r="46" />
+    <!-- Monogram: E built from two overlapping strokes, like a signature flourish -->
+    <text x="0" y="20" text-anchor="middle" class="monogram" font-size="58" font-style="italic">E</text>
+    <!-- small orbiting mark referencing "code/build" -->
+    <path d="M -30 -34 Q 0 -46 30 -34" fill="none" stroke="#C9A227" stroke-width="1.2" opacity="0.8" />
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(150,80)">
+    <text x="0" y="0" class="wordmark" font-size="30">ERISTOPHEN</text>
+    <line class="rule" x1="0" y1="18" x2="230" y2="18" />
+    <text x="0" y="40" class="tagline" font-size="11">SITES CONÇUS &amp; CODÉS AVEC SOIN</text>
+  </g>
+</svg>
