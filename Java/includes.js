@@ -24,5 +24,21 @@ function wireMobileNav() {
   });
 }
 
+function wireCreditModal() {
+  const trigger = document.getElementById("creditSignature");
+  const modal = document.getElementById("creditModal");
+  if (!trigger || !modal) return;
+  const closeBtn = modal.querySelector(".credit-modal-close");
+  trigger.addEventListener("click", function () {
+    modal.classList.add("open");
+  });
+  closeBtn.addEventListener("click", function () {
+    modal.classList.remove("open");
+  });
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) modal.classList.remove("open");
+  });
+}
+
 loadInclude("nav-placeholder", "partials/nav.html", wireMobileNav);
-loadInclude("footer-placeholder", "partials/footer.html");
+loadInclude("footer-placeholder", "partials/footer.html", wireCreditModal);
